@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html style="height: ;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<link rel="stylesheet" href="css/project.css">
+	<title>San Invest</title>
+</head>
+
+<body style="height: 100%; margin: 0;">
+	
+	<div class="slide-1">
+		<div class="title-link">
+			<div class="title">
+				<div class="title-sayt">San Invest</div>
+			</div>
+			<div class="title-links">
+				<a href="#home" class="home-link">
+					<button onclick="home()" class="home-but">ГЛАВНАЯ</button>
+				</a>
+				<a href="#buy" class="buy-link">
+					<button onclick="buy()" class="buy-but">ОФОРМИТЬ</button>
+				</a>
+				<a href="#donate" class="donate-link">
+					<button onclick="donate()" class="donate-but">ПОЖЕРТВОВАТЬ</button>
+				</a>
+				<a href="https://t.me/saninvest_official" class="help-link">
+					<button onclick="help()" class="help-but">ПОМОЩЬ</button>
+				</a>
+				<div class="profile-item">
+					<div class="profile">
+						<img class="avatar-img" src="pictures/avatar2.png" alt="error">
+						<div class="input-item">
+							<input type="text" placeholder="name" class="name-inp" id="txt_1" onkeyup='saveValue(this);'>
+							<input type="text" placeholder="years" class="old-inp" id="txt_2" onkeyup='saveValue(this);'>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="factors">
+			<div class="factor-item">
+				<p class="factor-text">
+					1. Заработать может <i>даже школьник</i>. 
+					Все сервисы и платежи просты и понятны.
+				</p>
+				<img class="factor-img" src="pictures/coen.png" alt="error">
+			</div>
+			<div class="factor-item-second">
+				<p class="factor-text-second">
+					2. Вложить можно в любое для вас <i>время</i>, на любом расстоянии 
+					<i>удаленно</i>. Ведь наши услуги проходят без офисов и помещений,
+					на любом устройстве.
+				</p>
+				<img class="factor-img" src="pictures/wifi.png" alt="error">
+			</div>
+		</div>
+		<div class="big-way">
+			<p class="way-title">Всего <i>8 шагов</i> и вы заработали!</p>
+			<div class="way">
+				<div class="step">1</div>
+				<div class="line">инвестиция</div>
+				<div class="step">2</div>
+				<div class="line">закупка</div>
+				<div class="step">3</div>
+				<div class="line">производство</div>
+				<div class="step">4</div>
+				<div class="line">продажа</div>
+				<div class="step">5</div>
+			</div>
+			<div class="stick-br">
+				<div class="line-br"></div>
+			</div>
+			<div class="way2">
+				<div class="big-line-green">прибыль</div>
+				<div class="step">8</div>
+				<div class="big-line">процент вам</div>
+				<div class="step">7</div>
+				<div class="big-line">процент нам</div>
+				<div class="step">6</div>
+			</div>
+		</div>
+		<div class="factors-free">
+			<div class="factor-item-free">
+				<p class="factor-text-free">
+					3. К сожалению, для платежей и инвестиций мы используем только Т-Банк.
+					Если вы не клиент этого банка, мы <i>не сможем</i> проводить операции с вашим
+					профилем :(
+				</p>
+				<img class="factor-img-bank" src="pictures/tbank.png" alt="error">
+			</div>
+		</div>
+		<div class="buy-block">
+			<a href="#buy-title">
+				<button onclick="buy()" class="buy-button">ОФОРМИТЬ</button>
+			</a>
+		</div>
+		<div class="create">
+			<p class="createby">created by Maksim Zenkov</p>
+		</div>
+		<div class="buy-base">
+			<p id="buy-title" class="buy-title">
+				Нам очень приятно, что вы решили инвестировать деньги в производство :)
+			</p>
+			<img class="buy-img" src="pictures/invest5.png" alt="error">
+			<p class="buy-bottom">
+				После инвестиции, ваши деньги отправятся на закупку компонентов, а после на
+				производство товаров. Мы продадим товары, заберем процент прибыли, а остальное 
+				отправится вам в виде ващей инвестиции + процент.
+			</p>
+			<p class="buy-bottom-red">
+				! При отправке денег, в комментарии к сумме напишите
+				номер карты куда потом отправить вашу прибыль, иначе деньги вы не получите!!!
+				<br>! Минимальная сумма - 50₽ 
+				(если отправили меньше, то вы не получите деньги обратно!!!).
+			</p>
+			<div class="link-bottom">
+				<a href="https://www.tinkoff.ru/rm/r_vdGJfzwEUj.QPnZtWRoBa/Zt39F39132" class="buy-link-bottom">
+					<button class="next">ПЕРЕЙТИ</button>
+				</a>
+			</div>
+		</div>
+		<div class="donate-base">
+			<p class="donate-title">
+				На самом деле, этот сайт, и весь этот проект сделан в одиночку 
+				мной (Максимом, кому интересно) и получить дополнительные деньги 
+				на дальнейшее развитие сайта было бы чудесным событием! <br> Отправляя 
+				деньги через эту ссылку, вы не получите прибыль взамен. Эти деньги идут 
+				на улучшение и оптимизацию сайта и услуг.
+			</p>
+			<div class="donate-link-button">
+				<a href="https://www.tinkoff.ru/rm/r_oGRCDbnDCX.BVHgDeAOse/LyrD279412" class="buy-link-bottom">
+					<button class="next">ПЕРЕЙТИ</button>
+				</a>
+			</div>
+		</div>
+		<div class="base">
+			<img class="smoke-img" src="pictures/smoke1.png" alt="Описание">
+			<div class="car">
+				<div class="rooftop">
+					<div class="antena"></div>
+					<div class="head"></div>
+				</div>
+				<button onclick="f1()" class="proj-name">
+					<div class="title-name">San Invest</div>
+					<div class="name-description">you're welcome!</div>
+				</button>
+				<div class="wheels">
+					<div class="wheel_1"></div>
+					<div class="wheel_2"></div>
+					<div class="wheel_3"></div>
+				</div>
+			</div>
+		</div>
+		<div class="loading">
+			<div class="loading-circle">
+				<div class="stick"></div>
+			</div>
+			<p class="loading-description">wait for answer . . .</p>
+		</div>
+	</div>
+	
+	<script src="script/project.js"></script>
+</body>
+</html>
